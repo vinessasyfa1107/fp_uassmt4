@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+ul li a {
+  color: black;
+}
+
+
+
+.profile {
+  border-radius: 50%;
+}
+
+.pesan {
+  transform: translateX(-6px);
+}
+
+.content {
+  padding: 51px 93px;
+  background-color: #f5f5fb;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.custom-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.tokoContainer div {
+  display: flex;
+  align-items: center;
+}
+
+.tokoContainer div p {
+  margin-left: 30px;
+}
+
+.tokoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+}
+
+.topSidebar p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.topSidebar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+  align-items: center;
+}
+
+.logoWeb {
+  height: 64px;
+  width: 70px;
+}
+
+ul.side {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  padding-left: 0px;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+ul.side li a {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+  scale: 0.8;
+}
+
+ul.side li {
+  padding: 12px 0px;
+  width: 210px;
+}
+
+li.active {
+  background: rgb(210, 236, 246);
+  border-radius: 10px;
+  padding: 12px 0px;
+}
+
+li.active a {
+  color: black;
+}
+
+.dashboardList p {
+  margin-left: 10px;
+}
+
+.produkList p {
+  margin-left: 3px;
+}
+
+.pelangganList p {
+  margin-left: 8px;
+}
+
+.analisisList p {
+  margin-left: 5px;
+}
+
+.tokoList p {
+  margin-left: 10px;
+}
+
+.pengaturanList p {
+  margin-left: 12px;
+}
+
+/* produk list css */
+/* Add your CSS styles here */
+#addProductForm {
+  display: none;
+  background-color: white;
+  padding: 38px;
+}
+
+.headProduct p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#addButton {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #29a867;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+#addButton:hover {
+  background-color: #25945a;
+}
+
+#addProduct {
+  transform: translate(-50px, 40px);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 12px 1px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  background: #29a86780;
+  width: 110%;
+}
+
+.singleImage {
+  width: 250px;
+  height: 100%;
+  padding: 15px 0;
+  background-color: white;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  scale: 0.93;
+}
+
+ul.listProduk {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  width: 104%;
+  row-gap: 70px;
+  transform: translateX(-50px);
+
+}
+
+.textContainer {
+  margin-top: 10px;
+  width: 88%;
+}
+
+.subSingle1 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.subSingle2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #c5c5c5;
+}
+
+.subSingle3 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #ff0000;
+}
+
+.dropdown-content {
+  display: none;
+  /* Add your styles for the dropdown content */
+}
+
+header {
+  padding: 10px 120px;
+  display: flex;
+  column-gap: 7px;
+  align-items: center;
+}
+
+.tokoList:hover .dropdown-content {
+  display: block;
+  /* Add your styles for the visible dropdown content when the 'Toko' element is active */
+}
+
+.pengaturanList:hover .dropdown-content {
+  display: block;
+  /* Add your styles for the visible dropdown content when the 'Toko' element is active */
+}
+
+.dropdown-content.active {
+  display: block;
+}
+
+.dropdown-content .active {
+  background-color: #ffd37f;
+}
+
+ul.dropdown-content {
+  list-style: none;
+}
+
+.number span {
+  cursor: pointer;
+}
+
+.minus,
+.plus {
+  width: 20px;
+  height: 20px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.number input {
+  height: 34px;
+  width: 100px;
+  text-align: center;
+  font-size: 26px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pesan {
+  transform: translateX(-3px);
+}
+
+.product-img {
+  width: 230px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: rgba(62, 61, 61, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}

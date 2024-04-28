@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* mengatur warna backgroud dan padding pada tag body bagian atas agar form tidak menempel diatas */
+body {
+  background: #d5dfec;
+  /* background-image: url(img/bg.jpg); */
+}
+
+.canvas-container {
+  position: relative;
+  padding: 10px;
+  margin-right: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.173);
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+
+.containerAllChart {
+  transform: translateX(-28px);
+  margin-bottom: 100px;
+}
+
+.chartContainer {
+  height: 300px;
+  width: 100%;
+  display: flex;
+}
+
+.chartContainer2 {
+  height: 350px;
+  width: 100%;
+  display: flex;
+}
+
+/* darkmode */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#previewContainer {
+  display: none;
+
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#previewContainer.show {
+  display: block;
+}
+
+#previewImage {
+  max-width: 300px;
+  max-height: 300px;
+}
